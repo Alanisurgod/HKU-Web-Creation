@@ -515,3 +515,206 @@ kbd {
   white-space: nowrap;
   border: 0;
 }
+
+/* Homepage carousel — official HKU destinations */
+.home-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.home-carousel-title {
+  margin: 0;
+  font-size: 1.08rem;
+  color: var(--accent-2);
+}
+
+.home-carousel-lede {
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: none;
+}
+
+.carousel-shell {
+  position: relative;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.carousel-shell.is-paused .carousel-pause-hint {
+  color: var(--accent-2);
+  font-weight: 650;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  background: #eef4f0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.55s ease;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    transition: none;
+  }
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.carousel-hit {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 3px solid transparent;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.carousel-hit:hover .carousel-caption-bar {
+  background: var(--accent-soft);
+}
+
+.carousel-hit img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #fff;
+}
+
+.carousel-caption-bar {
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 0.95rem;
+}
+
+.carousel-caption-bar strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.carousel-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 96%, var(--bg));
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 999px;
+  border: 2px solid var(--accent-2);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.carousel-dot[aria-current="true"] {
+  background: var(--accent-2);
+}
+
+.carousel-btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-2);
+  background: var(--surface);
+  color: var(--accent-2);
+  font-weight: 750;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: var(--accent-soft);
+}
+
+.carousel-pause-hint {
+  margin: 0;
+  padding: 0 12px 10px;
+  font-size: 0.88rem;
+}
+
+/* Linked “photo” blocks (study / wellbeing / first week) */
+.media-hit {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--line);
+}
+
+.media-hit:focus-visible {
+  outline-offset: -4px;
+}
+
+.media-hit img {
+  width: 100%;
+  height: auto;
+}
+
+figure.media figcaption a {
+  font-weight: 650;
+}
+
+/* Home cards with top visual */
+.card-with-visual {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-visual-hit {
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+
+.card-visual-hit:focus-visible {
+  outline-offset: -4px;
+}
+
+.card-visual-hit img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  background: #eef4f0;
+}
+
+.card-with-visual h2,
+.card-with-visual p {
+  padding: 0 16px;
+}
+
+.card-with-visual h2 {
+  margin-top: 14px;
+}
+
+.card-with-visual p:last-of-type {
+  padding-bottom: 16px;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" role="img" aria-labelledby="tp">
+  <title id="tp">Stylised HKU Portal-style sign-in screen with secure fields</title>
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0ec"/>
+      <stop offset="100%" stop-color="#f7faf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" fill="url(#pbg)"/>
+  <rect x="90" y="36" width="300" height="208" rx="14" fill="#fff" stroke="#2d6a4f" stroke-width="3" filter="drop-shadow(0 12px 24px rgba(27,67,50,.12))"/>
+  <rect x="0" y="0" width="480" height="36" fill="#1b4332"/>
+  <text x="16" y="24" fill="#d8f3dc" font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-weight="700">HKU Portal</text>
+  <text x="120" y="88" fill="#1b4332" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="750">Sign in</text>
+  <text x="120" y="112" fill="#3f5248" font-family="Segoe UI, system-ui, sans-serif" font-size="12">Use your HKU Portal credentials</text>
+  <rect x="120" y="128" width="240" height="36" rx="8" fill="#f1f5f3" stroke="#95d5b2" stroke-width="2"/>
+  <text x="132" y="151" fill="#3f5248" font-family="Segoe UI, system-ui, sans-serif" font-size="12">Username</text>
+  <rect x="120" y="174" width="240" height="36" rx="8" fill="#f1f5f3" stroke="#95d5b2" stroke-width="2"/>
+  <text x="132" y="197" fill="#3f5248" font-family="Segoe UI, system-ui, sans-serif" font-size="12">PIN / password</text>
+  <rect x="120" y="224" width="120" height="40" rx="10" fill="#2d6a4f"/>
+  <text x="148" y="249" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="13" font-weight="750">Continue</text>
+  <rect x="260" y="236" width="100" height="6" rx="2" fill="#40916c" opacity=".45"/>
+  <circle cx="420" cy="248" r="10" fill="#ffd166" opacity=".85"/>
+  <path d="M416 248h8M420 244v8" stroke="#1b4332" stroke-width="2" stroke-linecap="round"/>
+</svg>

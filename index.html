@@ -77,31 +77,151 @@
               publication. Always confirm deadlines and rules on your faculty site, Moodle, and HKU portals.
             </p>
           </div>
-          <figure class="media">
-            <img
-              src="assets/illustration-welcome.svg"
-              width="480"
-              height="280"
-              alt="Stylised path through an arch toward a bright horizon, suggesting the start of university life."
-            />
-            <figcaption>Visual cue for “beginning the journey”—decorative context sits in the caption and heading.</figcaption>
-          </figure>
+          <div class="home-carousel">
+            <h2 class="home-carousel-title" id="official-tools-heading">Official HKU tools (tap a slide)</h2>
+            <p class="home-carousel-lede muted">
+              Graphics below are original summaries, not screenshots. Each slide links to the real HKU site in a new
+              tab.
+            </p>
+            <div
+              class="carousel-shell"
+              data-home-carousel
+              data-interval="7000"
+              aria-labelledby="official-tools-heading"
+            >
+              <p class="sr-only" data-carousel-live aria-live="polite"></p>
+              <div class="carousel-viewport" id="home-carousel-viewport">
+                <div class="carousel-track" data-carousel-track>
+                  <div
+                    class="carousel-slide"
+                    data-slide-label="Slide 1 of 3: HKU Moodle for coursework and deadlines."
+                  >
+                    <a
+                      class="carousel-hit"
+                      href="https://moodle.hku.hk/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="assets/hku-visual-moodle.svg"
+                        width="480"
+                        height="280"
+                        alt="HKU Moodle (hkumoodle): course spaces, assignment uploads, readings, and quizzes."
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>HKU Moodle</strong>
+                        <span class="muted">Coursework hub → moodle.hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="carousel-slide"
+                    data-slide-label="Slide 2 of 3: HKU Portal for records, forms, and notices."
+                  >
+                    <a
+                      class="carousel-hit"
+                      href="https://hkuportal.hku.hk/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="assets/hku-visual-portal.svg"
+                        width="480"
+                        height="280"
+                        alt="HKU Portal: secure sign-in for personal and study records, forms, and many notices."
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>HKU Portal</strong>
+                        <span class="muted">Admin &amp; records → hkuportal.hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-slide" data-slide-label="Slide 3 of 3: The University of Hong Kong official site.">
+                    <a class="carousel-hit" href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="assets/hku-visual-main-site.svg"
+                        width="480"
+                        height="280"
+                        alt="The University of Hong Kong official homepage: news, faculties, and central navigation."
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>HKU official website</strong>
+                        <span class="muted">University hub → hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-toolbar">
+                <button type="button" class="carousel-btn" data-carousel-prev aria-controls="home-carousel-viewport">
+                  Previous slide
+                </button>
+                <div class="carousel-dots" role="group" aria-label="Choose slide">
+                  <button
+                    type="button"
+                    class="carousel-dot"
+                    data-carousel-dot
+                    aria-label="Show slide 1, HKU Moodle"
+                  ></button>
+                  <button
+                    type="button"
+                    class="carousel-dot"
+                    data-carousel-dot
+                    aria-label="Show slide 2, HKU Portal"
+                  ></button>
+                  <button
+                    type="button"
+                    class="carousel-dot"
+                    data-carousel-dot
+                    aria-label="Show slide 3, HKU official site"
+                  ></button>
+                </div>
+                <button type="button" class="carousel-btn" data-carousel-next aria-controls="home-carousel-viewport">
+                  Next slide
+                </button>
+              </div>
+              <p class="carousel-pause-hint muted">Slides advance automatically. Hover or move keyboard focus here to pause.</p>
+            </div>
+          </div>
         </section>
 
         <section aria-labelledby="tasks-title" style="margin-top: 22px">
           <h2 id="tasks-title">Three high-impact places to start</h2>
           <div class="card-grid">
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="first-week.html"
+                aria-label="Open the first-week checklist on this site (graphic suggests HKU Portal tasks)."
+              >
+                <img src="assets/hku-visual-portal.svg" width="480" height="200" alt="" />
+              </a>
               <h2>First week: reduce surprises</h2>
               <p>Use a tight checklist for cards, Wi‑Fi, email, and where to ask questions when something breaks.</p>
               <p style="margin-top: 12px"><a href="first-week.html">Open the checklist</a></p>
             </article>
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="https://lib.hku.hk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open HKU Libraries (official site) in a new tab."
+              >
+                <img src="assets/hku-visual-library.svg" width="480" height="200" alt="" />
+              </a>
               <h2>Study: make the library work for you</h2>
               <p>Scanning beats re-reading. Pair HKU Libraries with honest time blocks and a simple weekly review.</p>
               <p style="margin-top: 12px"><a href="study.html">Study habits &amp; tools</a></p>
             </article>
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="integrity.html"
+                aria-label="Open the integrity hub on this site (graphic suggests official handbook sources)."
+              >
+                <img src="assets/hku-visual-integrity.svg" width="480" height="200" alt="" />
+              </a>
               <h2>Integrity: follow the course, then the law of the University</h2>
               <p>Your course’s AI and collaboration rules come first. University-wide rules are linked for depth.</p>
               <p style="margin-top: 12px"><a href="integrity.html">Integrity hub</a></p>
@@ -127,5 +247,6 @@
       </div>
     </footer>
     <script src="js/main.js" defer></script>
+    <script src="js/home-carousel.js" defer></script>
   </body>
 </html>

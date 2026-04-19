@@ -67,31 +67,117 @@
               <strong>聲明：</strong>本站為獨立的學生向 companion，並非港大官方出版物。截止日期與規則請以學院網站、Moodle 及港大門戶為準。
             </p>
           </div>
-          <figure class="media">
-            <img
-              src="../assets/illustration-welcome.svg"
-              width="480"
-              height="280"
-              alt="風格化插畫：穿過拱門的小路通向明亮的地平線，象徵開啟大學生活。"
-            />
-            <figcaption>「啟程」主題的視覺提示——說明文字見標題與正文。</figcaption>
-          </figure>
+          <div class="home-carousel">
+            <h2 class="home-carousel-title" id="official-tools-heading">港大官方入口（可點選幻燈片）</h2>
+            <p class="home-carousel-lede muted">下圖為原創示意，並非截圖。每張幻燈片在新分頁開啟對應官網。</p>
+            <div
+              class="carousel-shell"
+              data-home-carousel
+              data-interval="7000"
+              aria-labelledby="official-tools-heading"
+            >
+              <p class="sr-only" data-carousel-live aria-live="polite"></p>
+              <div class="carousel-viewport" id="home-carousel-viewport">
+                <div class="carousel-track" data-carousel-track>
+                  <div class="carousel-slide" data-slide-label="第 1 張，共 3 張：港大 Moodle，課程與作業。">
+                    <a class="carousel-hit" href="https://moodle.hku.hk/" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="../assets/hku-visual-moodle.svg"
+                        width="480"
+                        height="280"
+                        alt="港大 Moodle（hkumoodle）：課程區、作業上載、閱讀與測驗。"
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>港大 Moodle</strong>
+                        <span class="muted">課程與作業樞紐 → moodle.hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-slide" data-slide-label="第 2 張，共 3 張：港大門戶，紀錄與表格。">
+                    <a class="carousel-hit" href="https://hkuportal.hku.hk/" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="../assets/hku-visual-portal.svg"
+                        width="480"
+                        height="280"
+                        alt="港大門戶：安全登入以辦理個人與學業紀錄、表格及許多通知。"
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>港大門戶</strong>
+                        <span class="muted">行政與紀錄 → hkuportal.hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="carousel-slide" data-slide-label="第 3 張，共 3 張：香港大學官方網站。">
+                    <a class="carousel-hit" href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="../assets/hku-visual-main-site.svg"
+                        width="480"
+                        height="280"
+                        alt="香港大學官方網站：新聞、院系與中央導覽。"
+                      />
+                      <div class="carousel-caption-bar">
+                        <strong>港大官網</strong>
+                        <span class="muted">大學總覽 → hku.hk</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-toolbar">
+                <button type="button" class="carousel-btn" data-carousel-prev aria-controls="home-carousel-viewport">
+                  上一張
+                </button>
+                <div class="carousel-dots" role="group" aria-label="選擇幻燈片">
+                  <button type="button" class="carousel-dot" data-carousel-dot aria-label="顯示第 1 張，港大 Moodle"></button>
+                  <button type="button" class="carousel-dot" data-carousel-dot aria-label="顯示第 2 張，港大門戶"></button>
+                  <button type="button" class="carousel-dot" data-carousel-dot aria-label="顯示第 3 張，港大官網"></button>
+                </div>
+                <button type="button" class="carousel-btn" data-carousel-next aria-controls="home-carousel-viewport">
+                  下一張
+                </button>
+              </div>
+              <p class="carousel-pause-hint muted">幻燈片會自動輪播；滑鼠懸停或將鍵盤焦點移入此區可暫停。</p>
+            </div>
+          </div>
         </section>
 
         <section aria-labelledby="tasks-title" style="margin-top: 22px">
           <h2 id="tasks-title">三個高回報的起點</h2>
           <div class="card-grid">
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="first-week.html"
+                aria-label="打開本站第一週清單（配圖示意港大門戶相關任務）。"
+              >
+                <img src="../assets/hku-visual-portal.svg" width="480" height="200" alt="" />
+              </a>
               <h2>第一週：減少意外</h2>
               <p>用一份短清單涵蓋校園卡、無線網絡、電郵與學習入口；遇到故障也知道先問哪裏。</p>
               <p style="margin-top: 12px"><a href="first-week.html">打開清單</a></p>
             </article>
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="https://lib.hku.hk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="在新分頁開啟港大圖書館官網。"
+              >
+                <img src="../assets/hku-visual-library.svg" width="480" height="200" alt="" />
+              </a>
               <h2>學習：讓圖書館真正幫到你</h2>
               <p>少反覆重讀，多主動回想；把港大圖書館網站與固定複習時段寫進日程。</p>
               <p style="margin-top: 12px"><a href="study.html">學習習慣與工具</a></p>
             </article>
-            <article class="card">
+            <article class="card card-with-visual">
+              <a
+                class="card-visual-hit"
+                href="integrity.html"
+                aria-label="打開本站學術誠信入口（配圖提示查閱官方手冊來源）。"
+              >
+                <img src="../assets/hku-visual-integrity.svg" width="480" height="200" alt="" />
+              </a>
               <h2>誠信：先聽課程，再看大學規則</h2>
               <p>課程對人工智能與合作的細則優先；大學層面的規則用外連深入閱讀。</p>
               <p style="margin-top: 12px"><a href="integrity.html">誠信入口</a></p>
@@ -116,5 +202,6 @@
       </div>
     </footer>
     <script src="../js/main.js" defer></script>
+    <script src="../js/home-carousel.js" defer></script>
   </body>
 </html>

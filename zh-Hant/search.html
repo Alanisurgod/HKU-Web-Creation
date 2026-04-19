@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>搜尋資源 | HKU 新生指南</title>
+    <meta name="description" content="在本站以關鍵字篩選港大官方連結與站內指南——純前端篩選，無追蹤。" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <img src="../assets/favicon.svg" width="40" height="40" alt="" />
+            <span>
+              HKU 新生指南
+              <small>實用導向，並非官方公告欄</small>
+            </span>
+          </a>
+          <div class="lang-switch" role="navigation" aria-label="語言">
+            <span class="sr-only">語言：</span>
+            <a href="../search.html" hreflang="en" lang="en">English</a>
+            <span aria-hidden="true">·</span>
+            <a href="../zh-Hans/search.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+            <span aria-hidden="true">·</span>
+            <a href="search.html" aria-current="true">繁體中文</a>
+          </div>
+        </div>
+        <div class="nav-row">
+          <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">選單</button>
+          <nav id="site-navigation" class="site-nav" aria-label="主要導覽">
+            <ul>
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="first-week.html">第一週</a></li>
+              <li><a href="study.html">學習</a></li>
+              <li><a href="integrity.html">學術誠信</a></li>
+              <li><a href="wellbeing.html">身心健康</a></li>
+              <li><a href="search.html" aria-current="page">搜尋</a></li>
+              <li><a href="privacy.html">私隱</a></li>
+              <li><a href="about.html">關於</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="導覽路徑">
+          <a href="index.html">首頁</a>
+          <span aria-hidden="true"> · </span>
+          <span>搜尋</span>
+        </nav>
+        <h1>搜尋資源</h1>
+        <p class="lede">輸入關鍵字篩選本頁的靜態清單——全部在瀏覽器本機完成。外連以新分頁開啟，並帶有安全的 <kbd>rel</kbd> 屬性。</p>
+
+        <div class="search-panel">
+          <label for="site-search">按關鍵字篩選</label>
+          <input id="site-search" type="search" autocomplete="off" spellcheck="false" />
+          <p class="muted" style="margin: 10px 0 0">顯示 <span id="search-count">12</span> 項（隨輸入更新）。</p>
+        </div>
+
+        <section id="search-results" aria-label="篩選結果">
+          <article class="resource" data-search="home start guide companion orientation unofficial 首頁 指南 新生">
+            <h3><a href="index.html">HKU 新生指南 — 首頁</a></h3>
+            <p class="muted">站內總覽與主要任務。</p>
+          </article>
+          <article class="resource" data-search="first week checklist cards wifi email timetable mistakes 第一週 清單 時間表 電郵 moodle 門戶">
+            <h3><a href="first-week.html">第一週清單</a></h3>
+            <p class="muted">精簡任務與常見誤區。</p>
+          </article>
+          <article class="resource" data-search="study library habits focus recall review teaching learning 學習 圖書館 專注 moodle 作業">
+            <h3><a href="study.html">學習與工具</a></h3>
+            <p class="muted">高效節奏與官方教學連結。</p>
+          </article>
+          <article class="resource" data-search="integrity plagiarism policy handbook conduct ai citation official 誠信 抄襲 手冊">
+            <h3><a href="integrity.html">學術誠信入口</a></h3>
+            <p class="muted">白話習慣與港大政策外連。</p>
+          </article>
+          <article class="resource" data-search="wellbeing cedars support counselling health sleep stress not advice 身心 輔導">
+            <h3><a href="wellbeing.html">身心健康</a></h3>
+            <p class="muted">日常提示與 CEDARS（官方）。</p>
+          </article>
+          <article class="resource" data-search="hku official homepage university news hub 港大 官方 主頁">
+            <h3><a href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">香港大學</a></h3>
+            <p class="muted">港大官方主頁（外連）。</p>
+          </article>
+          <article class="resource" data-search="portal hkuportal email timetable registration services official 門戶 註冊 電郵">
+            <h3><a href="https://hkuportal.hku.hk/" target="_blank" rel="noopener noreferrer">港大門戶（Portal）</a></h3>
+            <p class="muted">官方港大門戶（外連）。</p>
+          </article>
+          <article
+            class="resource"
+            data-search="moodle hkumoodle 作業 報告 提交 測驗 討論 小組 功課 課程 moodle"
+          >
+            <h3><a href="https://moodle.hku.hk/" target="_blank" rel="noopener noreferrer">港大 Moodle（hkumoodle）</a></h3>
+            <p class="muted">官方線上課程空間：資料、截止日、上載與課堂活動（外連）。</p>
+          </article>
+          <article class="resource" data-search="library borrow space databases study official 圖書館 數據庫">
+            <h3><a href="https://lib.hku.hk/" target="_blank" rel="noopener noreferrer">港大圖書館</a></h3>
+            <p class="muted">官方圖書館網站（外連）。</p>
+          </article>
+          <article class="resource" data-search="cedars counselling wellness student support official 學生事務 輔導">
+            <h3><a href="https://www.cedars.hku.hk/" target="_blank" rel="noopener noreferrer">CEDARS</a></h3>
+            <p class="muted">官方學生事務與支援樞紐（外連）。</p>
+          </article>
+          <article class="resource" data-search="plagiarism regulations policies teaching learning official 抄襲 規章">
+            <h3>
+              <a href="https://tl.hku.hk/plagiarism/policies-and-regulations/" target="_blank" rel="noopener noreferrer"
+                >教學促進 — 抄襲政策與規章</a
+              >
+            </h3>
+            <p class="muted">官方教學資源（外連）。</p>
+          </article>
+          <article class="resource" data-search="handbook undergraduate policies academic official 本科生 手冊">
+            <h3><a href="https://handbook.hku.hk/ug/" target="_blank" rel="noopener noreferrer">本科生手冊入口</a></h3>
+            <p class="muted">官方手冊入口（外連）。</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p style="margin-top: 0">
+            <strong>私隱：</strong>篩選不會把你的查詢傳送到本站伺服器。詳見「私隱」頁對靜態站點限制的說明。
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">私隱</a>
+          <a href="about.html">關於</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/search.js" defer></script>
+  </body>
+</html>

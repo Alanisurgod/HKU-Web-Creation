@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy | HKU Freshman Guide</title>
+    <meta name="description" content="Privacy notes for the HKU Freshman Guide static site: no accounts, minimal tracking, and safe external links." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <img src="assets/favicon.svg" width="40" height="40" alt="" />
+            <span>
+              HKU Freshman Guide
+              <small>Practical orientation, not an official noticeboard</small>
+            </span>
+          </a>
+          <div class="lang-switch" role="navigation" aria-label="Language">
+            <span class="sr-only">Language:</span>
+            <a href="privacy.html" aria-current="true">English</a>
+            <span aria-hidden="true">·</span>
+            <a href="zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+            <span aria-hidden="true">·</span>
+            <a href="zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+          </div>
+        </div>
+        <div class="nav-row">
+          <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+          <nav id="site-navigation" class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="first-week.html">First week</a></li>
+              <li><a href="study.html">Study</a></li>
+              <li><a href="integrity.html">Integrity</a></li>
+              <li><a href="wellbeing.html">Wellbeing</a></li>
+              <li><a href="search.html">Search</a></li>
+              <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true"> · </span>
+          <span>Privacy</span>
+        </nav>
+        <h1>Privacy on a static site</h1>
+        <p class="lede">
+          This project is plain HTML, CSS, and a small amount of JavaScript. There is no login, no database, and no
+          server-side account system in this repository.
+        </p>
+
+        <section aria-labelledby="priv-local-title" style="margin-top: 16px">
+          <h2 id="priv-local-title">What stays on your device</h2>
+          <ul class="checklist">
+            <li>
+              The <strong>Search</strong> page filters content locally. Your keystrokes are not sent to this site’s
+              server—because there is no application server bundled here.
+            </li>
+            <li>Your browser may still store normal history, cache, and downloads according to your own settings.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="priv-external-title" style="margin-top: 18px">
+          <h2 id="priv-external-title">What happens when you leave this site</h2>
+          <p>
+            External links (for example HKU Portal or Libraries) are governed by those organisations’ own privacy
+            statements. We open most official links in a new tab with <code>rel="noopener noreferrer"</code> to reduce
+            common <code>window.opener</code> risks and to avoid sending referrer data in supporting browsers.
+          </p>
+        </section>
+
+        <section aria-labelledby="priv-host-title" style="margin-top: 18px">
+          <h2 id="priv-host-title">Hosting note</h2>
+          <p class="muted">
+            If you publish on GitHub Pages or a similar host, the platform may collect technical metadata (for example
+            aggregated access logs) under its own policies. This is outside the static files in this project.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p style="margin-top: 0">
+            <strong>Security hygiene:</strong> keep your browser updated, use official bookmarks for sensitive tasks, and
+            verify URLs before signing in anywhere.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

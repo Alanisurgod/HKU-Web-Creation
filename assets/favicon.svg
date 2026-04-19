@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">HKU Freshman Guide mark</title>
+  <rect width="64" height="64" rx="14" fill="#1b4332"/>
+  <path d="M18 44V22l14-8 14 8v22" fill="none" stroke="#d8f3dc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 28h12v16H26z" fill="#95d5b2" opacity=".9"/>
+  <path d="M32 20v28" stroke="#d8f3dc" stroke-width="2" stroke-linecap="round"/>
+</svg>

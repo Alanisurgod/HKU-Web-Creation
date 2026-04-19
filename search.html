@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search resources | HKU Freshman Guide</title>
+    <meta name="description" content="Filterable list of official HKU links and on-site guides for freshmen—client-side search, no tracking." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <img src="assets/favicon.svg" width="40" height="40" alt="" />
+            <span>
+              HKU Freshman Guide
+              <small>Practical orientation, not an official noticeboard</small>
+            </span>
+          </a>
+          <div class="lang-switch" role="navigation" aria-label="Language">
+            <span class="sr-only">Language:</span>
+            <a href="search.html" aria-current="true">English</a>
+            <span aria-hidden="true">·</span>
+            <a href="zh-Hans/search.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+            <span aria-hidden="true">·</span>
+            <a href="zh-Hant/search.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+          </div>
+        </div>
+        <div class="nav-row">
+          <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+          <nav id="site-navigation" class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="first-week.html">First week</a></li>
+              <li><a href="study.html">Study</a></li>
+              <li><a href="integrity.html">Integrity</a></li>
+              <li><a href="wellbeing.html">Wellbeing</a></li>
+              <li><a href="search.html" aria-current="page">Search</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true"> · </span>
+          <span>Search</span>
+        </nav>
+        <h1>Search resources</h1>
+        <p class="lede">
+          Type keywords to filter this static list—everything runs in your browser. Official destinations open in a new
+          tab with safe <kbd>rel</kbd> attributes.
+        </p>
+
+        <div class="search-panel">
+          <label for="site-search">Filter by keyword</label>
+          <input id="site-search" type="search" autocomplete="off" spellcheck="false" />
+          <p class="muted" style="margin: 10px 0 0">
+            Showing <span id="search-count">12</span> matches (updates as you type).
+          </p>
+        </div>
+
+        <section id="search-results" aria-label="Filtered resources">
+          <article class="resource" data-search="home start guide companion orientation unofficial">
+            <h3><a href="index.html">HKU Freshman Guide — Home</a></h3>
+            <p class="muted">On-site overview and primary tasks.</p>
+          </article>
+          <article class="resource" data-search="first week checklist cards wifi email timetable mistakes moodle portal">
+            <h3><a href="first-week.html">First-week checklist</a></h3>
+            <p class="muted">Compact tasks and common mistakes to avoid.</p>
+          </article>
+          <article class="resource" data-search="study library habits focus recall review teaching learning moodle assignments">
+            <h3><a href="study.html">Study tools &amp; habits</a></h3>
+            <p class="muted">Efficient routines plus official learning links.</p>
+          </article>
+          <article class="resource" data-search="integrity plagiarism policy handbook conduct ai citation official">
+            <h3><a href="integrity.html">Academic integrity hub</a></h3>
+            <p class="muted">Plain habits with pointers to HKU policy pages.</p>
+          </article>
+          <article class="resource" data-search="wellbeing cedars support counselling health sleep stress not advice">
+            <h3><a href="wellbeing.html">Wellbeing</a></h3>
+            <p class="muted">Everyday regulation ideas and CEDARS (official).</p>
+          </article>
+          <article class="resource" data-search="hku official homepage university news hub">
+            <h3>
+              <a href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">The University of Hong Kong</a>
+            </h3>
+            <p class="muted">Official HKU homepage (external).</p>
+          </article>
+          <article class="resource" data-search="portal hkuportal email timetable registration services official">
+            <h3>
+              <a href="https://hkuportal.hku.hk/" target="_blank" rel="noopener noreferrer">HKU Portal</a>
+            </h3>
+            <p class="muted">Official HKU Portal (external).</p>
+          </article>
+          <article
+            class="resource"
+            data-search="moodle hkumoodle assignments coursework submission quiz forum presentation report lms"
+          >
+            <h3>
+              <a href="https://moodle.hku.hk/" target="_blank" rel="noopener noreferrer">HKU Moodle (hkumoodle)</a>
+            </h3>
+            <p class="muted">
+              Official Moodle site for course spaces, deadlines, uploads, and online activities (external).
+            </p>
+          </article>
+          <article class="resource" data-search="library borrow space databases study official">
+            <h3>
+              <a href="https://lib.hku.hk/" target="_blank" rel="noopener noreferrer">HKU Libraries</a>
+            </h3>
+            <p class="muted">Official library site (external).</p>
+          </article>
+          <article class="resource" data-search="cedars counselling wellness student support official">
+            <h3>
+              <a href="https://www.cedars.hku.hk/" target="_blank" rel="noopener noreferrer">CEDARS</a>
+            </h3>
+            <p class="muted">Official student affairs and support hub (external).</p>
+          </article>
+          <article class="resource" data-search="plagiarism regulations policies teaching learning official">
+            <h3>
+              <a href="https://tl.hku.hk/plagiarism/policies-and-regulations/" target="_blank" rel="noopener noreferrer"
+                >TL — plagiarism policies &amp; regulations</a
+              >
+            </h3>
+            <p class="muted">Official teaching &amp; learning resource (external).</p>
+          </article>
+          <article class="resource" data-search="handbook undergraduate policies academic official">
+            <h3>
+              <a href="https://handbook.hku.hk/ug/" target="_blank" rel="noopener noreferrer">Undergraduate Handbook hub</a>
+            </h3>
+            <p class="muted">Official handbook entry point (external).</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p style="margin-top: 0">
+            <strong>Privacy:</strong> this filter does not send your query anywhere. See the Privacy page for limits of a
+            static site.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/search.js" defer></script>
+  </body>
+</html>

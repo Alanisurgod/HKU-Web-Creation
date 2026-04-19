@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" role="img" aria-labelledby="tw">
+  <title id="tw">Stylised path leading through an open arch toward a distant horizon</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#f1f8f4"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b7e4c7"/>
+      <stop offset="100%" stop-color="#74c69d"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" fill="url(#sky)"/>
+  <ellipse cx="240" cy="248" rx="200" ry="18" fill="#cfe8d6" opacity=".65"/>
+  <path d="M120 240c40-60 80-100 120-120s80-40 120-40" fill="none" stroke="url(#path)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M176 40h128l24 200H152z" fill="#ffffff" stroke="#2d6a4f" stroke-width="4" opacity=".95"/>
+  <path d="M240 40v200" stroke="#40916c" stroke-width="4"/>
+  <circle cx="360" cy="72" r="22" fill="#ffd166" opacity=".9"/>
+  <path d="M320 96c16-10 34-16 52-18" fill="none" stroke="#1b4332" stroke-width="3" stroke-linecap="round" opacity=".35"/>
+</svg>

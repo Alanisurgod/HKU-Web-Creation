@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>私隱 | HKU 新生指南</title>
+    <meta name="description" content="HKU 新生指南靜態網站的私隱說明：無帳號體系、少追蹤、外連安全策略。" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html">
+            <img src="../assets/favicon.svg" width="40" height="40" alt="" />
+            <span>
+              HKU 新生指南
+              <small>實用導向，並非官方公告欄</small>
+            </span>
+          </a>
+          <div class="lang-switch" role="navigation" aria-label="語言">
+            <span class="sr-only">語言：</span>
+            <a href="../privacy.html" hreflang="en" lang="en">English</a>
+            <span aria-hidden="true">·</span>
+            <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+            <span aria-hidden="true">·</span>
+            <a href="privacy.html" aria-current="true">繁體中文</a>
+          </div>
+        </div>
+        <div class="nav-row">
+          <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">選單</button>
+          <nav id="site-navigation" class="site-nav" aria-label="主要導覽">
+            <ul>
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="first-week.html">第一週</a></li>
+              <li><a href="study.html">學習</a></li>
+              <li><a href="integrity.html">學術誠信</a></li>
+              <li><a href="wellbeing.html">身心健康</a></li>
+              <li><a href="search.html">搜尋</a></li>
+              <li><a href="privacy.html" aria-current="page">私隱</a></li>
+              <li><a href="about.html">關於</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="導覽路徑">
+          <a href="index.html">首頁</a>
+          <span aria-hidden="true"> · </span>
+          <span>私隱</span>
+        </nav>
+        <h1>靜態站點的私隱說明</h1>
+        <p class="lede">本項目為純 HTML、CSS 與少量 JavaScript。倉庫內不包含登入系統、數據庫或後端帳號體系。</p>
+
+        <section aria-labelledby="priv-local-title" style="margin-top: 16px">
+          <h2 id="priv-local-title">留在你裝置上的內容</h2>
+          <ul class="checklist">
+            <li><strong>搜尋</strong>頁的篩選在本機完成；你的按鍵不會傳送到本站伺服器——因為此處未捆綁應用伺服器。</li>
+            <li>瀏覽器仍可能按你的設定保存歷史、快取與下載紀錄。</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="priv-external-title" style="margin-top: 18px">
+          <h2 id="priv-external-title">離開本站之後</h2>
+          <p>
+            外連（例如港大門戶或圖書館）受其各自私隱政策約束。多數外連在新分頁開啟，並使用 <code>rel="noopener noreferrer"</code>，以降低常見的
+            <code>window.opener</code> 風險，並在支援的瀏覽器中減少引薦來源資訊。
+          </p>
+        </section>
+
+        <section aria-labelledby="priv-host-title" style="margin-top: 18px">
+          <h2 id="priv-host-title">託管說明</h2>
+          <p class="muted">
+            若你使用 GitHub Pages 或類似平台發布，平台可能按自身政策收集技術性元數據（例如聚合存取日誌），這已超出本倉庫靜態文件的範圍。
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p style="margin-top: 0"><strong>安全習慣：</strong>保持瀏覽器更新；敏感操作使用官方書籤；登入前核對網址。</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">關於</a>
+          <a href="index.html">首頁</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>
